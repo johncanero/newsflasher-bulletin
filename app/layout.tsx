@@ -1,5 +1,7 @@
 import "../styles/globals.css"
+import Header from "@/components/Header"
 
+// head
 export const metadata = {
   title: 'NewsFlasher',
   description: 'Live News App of NewsFlasher',
@@ -17,7 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        <div>
+          {children}
+        </div>
+      </body>
     </html>
   )
 }
