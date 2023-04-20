@@ -7,8 +7,8 @@ export const metadata = {
   description: 'Live News App of NewsFlasher',
   keywords: 'live, news, app, flasher',
   icons: {
-    icon: '/images/icon/worldNews.png',
-    shortcut: '/images/icon/worldNews.png',
+    icon: '/images/icon/worldNews2.png',
+    shortcut: '/images/icon/worldNews2.png',
   },
 }
 
