@@ -1,5 +1,15 @@
-import "../styles/globals.css"
-import Header from "@/components/Header"
+import "../styles/globals.css";
+import Header from "@/components/Header";
+import { Noto_Sans } from '@next/font/google';
+
+// Install npm i @next/font 
+// Array of Strings of Weights, Subsets
+const noto_sans = Noto_Sans({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '700', '800', '900'],
+  variable: '--font-noto_sans'
+})
+
 
 // head
 export const metadata = {
@@ -20,9 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <div>
-          {children}
+        <div className={noto_sans.className}>
+          <Header />
+          <div>
+            {children}
+          </div>
         </div>
       </body>
     </html>
