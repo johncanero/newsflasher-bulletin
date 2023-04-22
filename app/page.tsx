@@ -1,5 +1,6 @@
 import { categories } from '../constants';
 import fetchNews from '../lib/fetchNews';
+import NewsList from '@/components/NewsList';
 
 async function HomePage() {
 	// fetch news data
@@ -8,7 +9,7 @@ async function HomePage() {
 	console.log(news);
 	return (
 		<div>
-		
+			<NewsList news={news} />
 		</div>
 	);
 }
