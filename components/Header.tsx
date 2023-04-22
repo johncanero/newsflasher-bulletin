@@ -9,22 +9,22 @@ import DarkModeButton from './DarkModeButton'
 function Header() {
     return (
         <header>
-            <div className="flex items-center justify-between p-10">
+            <div className="flex items-center justify-between p-6 md:p-10 lg:p-12">
                 {/* React Icon */}
                 <Bars3Icon className="w-8 h-8 cursor-pointer" />
 
                 {/* Logo and Link */}
-                <div className='flex gap-1'>
+                <div className='flex gap-2 md:gap-1'>
                     {/* Logo */}
                     <Image
                         src="/images/icon/worldNews2.png"
                         alt="My Image"
-                        width={50}
-                        height={50}
+                        width={40}
+                        height={40}
                     />
                     {/* Link */}
                     <Link href={'/'} prefetch={false}>
-                        <h1 className="flex-1 mt-1 text-lg font-medium text-center md:text-3xl">
+                        <h1 className="flex-1 mt-2 md:mt-1 text-base font-medium text-center md:text-3xl">
                             <span className="">
                                 NewsFlasher
                             </span>{' '}
