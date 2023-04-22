@@ -20,7 +20,7 @@ function Article({ article }: Props) {
 			)}
 			<div className="flex flex-col flex-1">
 				<div className="flex flex-col flex-1 p-5">
-					<h2 className=" font-bold">{article.title}</h2>
+					<h2 className="font-serif font-bold ">{article.title}</h2>
 					<section className="flex-1 mt-2">
 						<p className="text-xs line-clamp-6">{article.description}</p>
 					</section>
