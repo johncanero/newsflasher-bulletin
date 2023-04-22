@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Header from "@/components/Header";
+import Providers from "@/components/Providers";
 import { Noto_Sans } from '@next/font/google';
 
 // Install npm i @next/font 
@@ -29,15 +30,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <*  className="transition-all duration-700 bg-gray-100 dark:bg-zinc-900">*/}
-      <body className="transition-all duration-700 bg-gray-100">
-        <div className={noto_sans.className}>
-          <Header />
-          <div className="max-w-6xl mx-auto">
-            {children}
+      <Providers>
+        <body className="transition-all duration-700 bg-gray-100 dark:bg-zinc-900">
+          <div className={noto_sans.className}>
+            <Header />
+            <div className="max-w-6xl mx-auto">
+              {children}
+            </div>
           </div>
-        </div>
-      </body>
+        </body>
+      </Providers>
     </html>
   )
 }
