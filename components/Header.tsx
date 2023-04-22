@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Bars3Icon } from '@heroicons/react/24/solid'
 import NavLinks from './NavLinks'
@@ -7,19 +8,29 @@ import SearchBox from './SearchBox'
 function Header() {
     return (
         <header>
-            <div className="grid items-center grid-cols-3 p-10">
+            <div className="flex items-center justify-between p-10">
                 {/* React Icon */}
                 <Bars3Icon className="w-8 h-8 cursor-pointer" />
 
-                {/* Link */}
-                <Link href={'/'} prefetch={false}>
-                    <h1 className="flex-1 text-lg font-medium text-center md:text-3xl">
-                        <span className="">
-                            NewsFlasher
-                        </span>{' '}
-                        Bulletin
-                    </h1>
-                </Link>
+                {/* Logo and Link */}
+                <div className='flex gap-1'>
+                    {/* Logo */}
+                    <Image
+                        src="/images/icon/worldNews2.png"
+                        alt="My Image"
+                        width={50}
+                        height={50}
+                    />
+                    {/* Link */}
+                    <Link href={'/'} prefetch={false}>
+                        <h1 className="flex-1 mt-1 text-lg font-medium text-center md:text-3xl">
+                            <span className="">
+                                NewsFlasher
+                            </span>{' '}
+                            Bulletin
+                        </h1>
+                    </Link>
+                </div>
 
                 {/* Dark Mode */}
                 <div className="flex items-center justify-end space-x-2">

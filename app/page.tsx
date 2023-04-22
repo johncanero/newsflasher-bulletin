@@ -1,12 +1,16 @@
-// rcfe
-import React from 'react'
+import { categories } from '../constants';
+import fetchNews from '../lib/fetchNews';
 
-function HomePage() {
-  return (
-    <div>
-      <div className='text-center mt-12'>HomePage</div>
-    </div>
-  )
+async function HomePage() {
+	// fetch news data
+	const news: NewsResponse = await fetchNews(categories.join(','));
+
+	console.log(news);
+	return (
+		<div>
+		
+		</div>
+	);
 }
 
-export default HomePage
+export default HomePage;
