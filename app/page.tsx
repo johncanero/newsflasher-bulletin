@@ -19,7 +19,7 @@ async function HomePage() {
 					alt="My image"
 					width={1100}
 					height={1100}
-					className=""
+					className="max-w-xl md:max-w-3xl lg:max-w-6xl rounded-2xl"
 				/>
 			</div>
 			<NewsList news={news} />
