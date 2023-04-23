@@ -9,7 +9,7 @@ import DarkModeButton from './DarkModeButton'
 function Header() {
     return (
         <header>
-            <div className="flex items-center justify-between p-6 md:p-10 lg:mx-16 mx-auto">
+            <div className="flex items-center justify-between p-6 md:p-10 lg:mx-14 mx-auto">
                 {/* React Icon */}
                 <Bars3Icon className="w-8 h-8 cursor-pointer" />
 
