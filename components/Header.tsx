@@ -34,7 +34,7 @@ function Header() {
                 </div>
 
                 {/* Dark Mode */}
-                <div className="flex items-center justify-end gap-1 space-x-2">
+                <div className="flex items-center justify-end gap-2 space-x-2">
                     {/* Dark mode button */}
                     <DarkModeButton  />
                     {/* Button */}
