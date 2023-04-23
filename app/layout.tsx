@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
 import { Noto_Sans } from '@next/font/google';
 
@@ -37,6 +38,7 @@ export default function RootLayout({
             <div className="max-w-6xl mx-auto">
               {children}
             </div>
+            <Footer />
           </div>
         </body>
       </Providers>
