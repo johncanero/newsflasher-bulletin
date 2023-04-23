@@ -19,8 +19,18 @@ async function NewsCategory({ params: { category } }: Props) {
 
 export default NewsCategory;
 
+// Special Function
 export async function generateStaticParams() {
 	return categories.map((category) => ({
 		category: category,
 	}));
 }
+
+// prebuilding these pages: 
+// 'general',
+// 'business',
+// 'entertainment',
+// 'health',
+// 'science',
+// 'sports',
+// 'technology',
