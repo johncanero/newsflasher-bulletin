@@ -10,12 +10,12 @@ import { Bars3Icon } from '@heroicons/react/24/solid'
 function Header() {
     return (
         <header>
-            <div className="flex items-center justify-between p-6 md:p-10 lg:mx-14 mx-auto">
+            <div className="flex items-center justify-between p-6 mx-auto mb-6 md:p-10 lg:px-12 bg-lime-50 dark:bg-lime-900">
                 {/* React Icon */}
                 <Bars3Icon className="w-8 h-8 cursor-pointer" />
 
                 {/* Logo and Link */}
-                <div className='flex gap-2 md:gap-1 justify-center mx-auto'>
+                <div className='flex justify-center gap-2 mx-auto md:gap-1'>
                     {/* Logo */}
                     <Image
                         src="/images/icon/worldNews2.png"
@@ -25,7 +25,7 @@ function Header() {
                     />
                     {/* Link */}
                     <Link href={'/'} prefetch={false}>
-                        <h1 className="flex-1 mt-2 text-base font-serif font-medium md:mt-1 md:text-3xl">
+                        <h1 className="flex-1 mt-2 font-serif text-base font-medium md:mt-1 md:text-3xl">
                             <span className="">
                                 NewsFlasher
                             </span>{' '}
