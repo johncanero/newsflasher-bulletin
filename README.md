@@ -1,1 +1,1 @@
-Deployment: https://live-news-app-by-johncanero.vercel.app/
+Deployment: https://newsflasher-bulletin-by-johncanero.vercel.app/
