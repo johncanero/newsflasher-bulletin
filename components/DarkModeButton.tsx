@@ -16,16 +16,17 @@ function DarkModeButton() {
 
 	const currentTheme = theme === 'system' ? systemTheme : theme;
 	return (
-		<div>
-			{currentTheme === 'dark' ? (
-				<SunIcon
-					className="w-7 h-7 text-yellow-500 cursor-pointer"
-					onClick={() => setTheme('light')}
+		<div className='md:mt-1 lg:mt-2'>
+			{currentTheme === 'light' ? (
+				<MoonIcon
+					className="w-6 h-6 text-gray-500 cursor-pointer"
+					onClick={() => setTheme('dark')}
 				/>
 			) : (
-				<MoonIcon
-					className="w-7 h-7 text-gray-500 cursor-pointer"
-					onClick={() => setTheme('dark')}
+
+				<SunIcon
+					className="w-6 h-6 text-yellow-500 cursor-pointer"
+					onClick={() => setTheme('light')}
 				/>
 			)}
 		</div>
