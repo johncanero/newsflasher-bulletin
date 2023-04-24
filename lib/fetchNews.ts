@@ -66,11 +66,11 @@ const fetchNews = async (
   console.log("LOADING NEW DATA FROM API FOR CATEGORY -> ", category, keywords);
   const newsResponse = await res.json();
 
-  // sort function
+  // Sor function by imagges vs not images present
   const news = sortNewsByImage(newsResponse.data.myQuery);
 
-  return news;
   // return results
+  return news;
 };
 
 export default fetchNews;
