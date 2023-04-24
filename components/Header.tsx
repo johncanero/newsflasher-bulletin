@@ -10,7 +10,7 @@ import { Bars3Icon } from '@heroicons/react/24/solid'
 function Header() {
     return (
         <header>
-            <div className="flex items-center justify-between p-6 mx-auto mb-6 md:p-10 lg:px-12 bg-lime-50 dark:bg-lime-900">
+            <div className="flex items-center justify-between p-6 mx-auto mb-6 md:p-10 lg:px-12 bg-stone-100 dark:bg-stone-900">
                 {/* React Icon */}
                 <Bars3Icon className="w-8 h-8 cursor-pointer" />
 
