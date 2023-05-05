@@ -12,16 +12,6 @@ async function HomePage() {
 
 	return (
 		<div>
-			{/* Background Image */}
-			<div className='mx-auto flex justify-center'>
-				<Image
-					src="/images/newsFlasherHeaderBackground-min.jpg"
-					alt="My image"
-					width={1100}
-					height={1100}
-					className="md:max-w-3xl lg:max-w-6xl md:rounded-2xl"
-				/>
-			</div>
 			<NewsList news={news} />
 		</div>
 	);
